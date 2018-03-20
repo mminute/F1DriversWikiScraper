@@ -6,8 +6,8 @@ def write_js_object(ruby_hash)
         else
             val = "'#{v.gsub(/\n/, ',').gsub("'", '‘')}'"
         end
-        formatted = formatted + "#{k}:#{val},"
+        formatted = formatted + " #{k}: #{val},"
     }
 
-    formatted[0..-2] + '}'
+    formatted[0..-2] + ' },'
 end
