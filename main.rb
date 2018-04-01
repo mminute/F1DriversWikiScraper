@@ -4,8 +4,8 @@ require_relative './wikiScraper.rb'
 require 'open-uri'
 
 # GET THE LIST OF DRIVERS
-# driver_index = open('https://en.wikipedia.org/wiki/List_of_Formula_One_drivers').read
-# IO.write(Dir.getwd + '/html/driverIndex.html', driver_index)
+driver_index = open('https://en.wikipedia.org/wiki/List_of_Formula_One_drivers').read
+IO.write(Dir.getwd + '/html/driverIndex.html', driver_index)
 
 scraper = WikiScraper.new(Dir.getwd + '/html/driverIndex.html')
 
